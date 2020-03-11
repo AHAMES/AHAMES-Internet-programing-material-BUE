@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/Exercise3.js"></script>
+    <script src="scripts/Exercise2.js"></script>
+    <script src="scripts/Exercise4.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <section>
+        <div class="tab">
+          <button class="tablinks" onclick="openGame(event, 'Animation')">
+            Animation
+          </button>
+          <button class="tablinks" onclick="openGame(event, 'Board')">
+            Chessboard
+          </button>
+        </div>
+        <div id="Board" >
+        <button id="horizbtn">Horizontal</button>
+        <button id="vertibtn">Vertical</button>
+        <button id="Chessbtn">Chess</button>
+        <table id="gameBoard">
+          <tbody></tbody>
+        </table>
+        </div>
+
+        <div id="Animation" > 
+        <div class="sliderButtonGroup">
+          <button class="slidingButtons" id="ShapesSlider">Shapes</button>
+          <button class="slidingButtons" id="ColorsSlider">Color</button>
+          <button class="slidingButtons" id="MovementSlider">Movement</button>
+        </div>
+          <ul id="shapes" class="commandGroup">
+            <li id="circle" class="command">Circle</li>
+            <li id="square" class="command">Square</li>
+            <li id="rectangle" class="command">Rectangle</li>
+            <li id="triangle" class="command">triangle</li>
+            <li id="circle" class="command">Rhombus</li>
+            <li id="square" class="command">Ellipse</li>
+            <li id="rectangle" class="command">Hexagon</li>
+            <li id="triangle" class="command">Octagon</li>
+          </ul>
+          <ul id="Color" class="commandGroup">
+            <li id="red" class="command">Red</li>
+            <li id="green" class="command">Green</li>
+            <li id="blue" class="command">Blue</li>
+          </ul>
+          <ul id="Moves" class="commandGroup">
+            <li id="left" class="command">left</li>
+            <li id="middle" class="command">middle</li>
+            <li id="right" class="command">right</li>
+            <li id="hide" class="command">Hide</li>
+          </ul>
+      
+          <div id="subject" class="Rectangle""></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

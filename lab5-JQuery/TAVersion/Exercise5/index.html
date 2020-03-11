@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/Exercise5.js"></script>
+  </head>
+  <h1>Sign Up</h1>
+  <form name="SignUp" id="SignUp" onsubmit="return validateForm()"">
+    <label for="Username">Username:</label>
+    <input type="text" required name="Username" /><br /><br />
+
+    <label for="Age">Age:</label>
+    <input type="number" name="Age" required/><br /><br />
+
+
+    <label for="Address">Address:</label>
+    <input type="text" name="Address" required/><br /><br />
+
+    
+    <label for="Email">Email:</label>
+    <input type="email" name="Email" required/><br /><br />
+    <br />
+    
+    <label for="Gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" checked required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br />
+
+    <label for="Language">Language:</label>
+    <input type="checkbox" id="English" name="language" value="English" checked >
+    <label for="Egnlish">English</label>
+    <input type="checkbox" id="Arabic" name="language" value="Arabic" checked >
+    <label for="Arabic">Arabic</label><br><br />
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password"required><br><br>
+
+    
+    <label for="re-type">re-type:</label>
+    <input type="password" id="re-type" name="re-type" required><br><br>
+
+    <button type="submit" > SignUp</button> 
+  </form>
+</html>
